@@ -64,3 +64,37 @@ nav .items .item:hover {
 .gallery .image:hover img {
   transform: scale(1.1);
 }
+
+@media (max-width: 1000px) {
+  .gallery .image {
+    width: calc(100% / 3);
+  }
+}
+
+@media (max-width: 800px) {
+  .gallery .image {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 600px) {
+  nav .items {
+    max-width: 600px;
+  }
+  nav .items .item {
+    padding: 7px 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav .items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav .items .item {
+    margin: 5px;
+  }
+  .gallery .image {
+    width: 100%;
+  }
+}
